@@ -3,7 +3,7 @@
 - Download the project and update pom with micrometer-core
 - Add rest controller and get mapping to check if the project is available
 - Add application.yaml for including metrics, info, health and prometheus
-- Check http://localhost:8080/actuator and http://localhost:8080/actuator/prometheus
+- Build and start the app to check http://<dockerIP>:8080/actuator and http://<dockerIP>:8080/actuator/prometheus
 - Add prometheus.yaml file to your project and change IP to docker IP for actuator job static config
 - Download prometheus docker image
   $ docker pull prom/prometheus
@@ -19,3 +19,4 @@
 - use default credentials: admin/admin
 - create your dashboard and provide metrics your want to watch
 
+- finally execute ubuntu.exe, go to the project location and now you can use the startup and shutdown scripts to build, run and stop all the containers altogether
